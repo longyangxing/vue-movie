@@ -1,0 +1,49 @@
+@import 'common';
+#detail {
+  .cover {
+    img {
+      width: 100%;
+    }
+  }
+  .film-word1 {
+    margin: 16*$px auto;
+    border-left: 16*$px solid RGB(228, 200, 156);
+    font-size: 16*$px;
+    padding-left: 4*$px;
+  }
+  .film-word2 {
+    height: 18*$px;
+    line-height: 18*$px;
+    overflow: hidden;
+    margin-bottom: 10*$px;
+    padding-left: 20*$px; 
+  }
+  .film-word3{
+    text-overflow: ellipsis;
+    margin-bottom: 80*$px;
+    padding: 0 20*$px;
+    line-height: 18*$px;
+  }
+  .operator{
+    position: fixed;
+    bottom: 20*$px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    .cpn-primary-button{
+      font-size: 14*$px;
+      min-width: 156*$px;
+      height: 36*$px;
+      line-height: 36*$px;
+      border: none;
+      background-color: #fe8233;
+      padding: 0;
+      margin: 0;
+      border-radius: 18*$px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+  }
+
+}

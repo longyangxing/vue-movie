@@ -1,0 +1,37 @@
+@import './common.scss';
+#header{
+    width: 100%;
+    background: #282828;
+    position: fixed;
+    color: #999;
+    height: 50*$px;
+    line-height: 50*$px;
+    z-index: 501;
+    @include box(justify,center);
+
+    .go-menu,.go-mine{
+        width: 50*$px;
+        text-align: center;
+        height: 50*$px;
+        display: block;
+
+        i{
+            font-size: 20*$px;
+        }
+    }
+
+    .title{
+       width: 274*$px;
+       font-size: 16*$px;
+       color: #fff;
+       @include box(justify,center);
+
+       a{
+           text-decoration: none;
+           i{
+               margin-left: 5*$px;
+               font-size: 12*$px;   
+           }
+       }
+    }
+}

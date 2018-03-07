@@ -1,0 +1,61 @@
+@import './common.scss';
+#sidebar{
+    transition: all ease .4s
+}
+.sidebar-enter-active,.sidebar-leave-active{
+    transition: all ease .4s
+}
+.left-nav-enter-active{
+    transition: right ease .4s;
+}
+.left-nav-enter,.left-nav-leave{
+    right:  380*$px !important;
+}
+.sidebar-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 501;
+  .sidebar-verlay{
+      position: absolute;
+      top: 50*$px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.5); 
+      
+    nav{
+        position: absolute;
+        right: 110*$px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        display: block;
+        background: #282828;
+        box-shadow: 0 1px 1px #363636 inset;
+        border-top: 1px solid #222;
+        box-shadow: 0 1px 1px #363636 inset;
+    }
+    li{
+        overflow: hidden;
+        line-height: 50*$px;
+        height: 51*$px;
+        @include box(justify,center);
+        a{
+            display: block;
+            width: 100%;
+            padding: 0 15*$px;
+            margin: 0 auto;
+            color: #9a9a9a;
+            font-size: 16*$px;
+            border-bottom: 1px dotted #333;
+            box-sizing: border-box; 
+        }
+    }
+    .go-menu{
+        border-right: 1px solid #222;
+    }
+  }
+}

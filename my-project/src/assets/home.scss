@@ -1,0 +1,84 @@
+@import './common.scss';
+
+#home{
+    background: #e1e1e1;
+    .banner-swiper{
+        height: 232*$px;
+        color: #fff;
+        font-size: 30*$px;
+        text-align: center;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+
+    .now-playing,.comming-soon{
+       padding: 15*$px;
+       .item {
+            background: #f9f9f9;
+            margin-bottom: 15*$px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+            img{
+                width: 100%;
+            }
+            .item-footer{
+                @include box(justify,center);
+                padding: 5*$px 10*$px;
+            }
+        }
+
+        .desc{
+            font-size: 12*$px;
+            font-weight: 100;
+            color: #9a9a9a;
+            line-height: 15*$px;
+            .info{
+                font-size: 10*$px;
+            }
+        }
+
+        .count{
+            color: #f78360;
+            font-weight: 500;
+        }
+    }
+
+    .go-more{
+        width: 150*$px;
+        height: 30*$px;
+        line-height: 30*$px;
+        color: #616161;
+        font-size: 13*$px;
+        text-align: center;
+        border: 1px solid #aaa;
+        border-radius: 30*$px;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 15*$px;
+    }
+
+    .comming-title{
+        width: 100%;
+        height: 1px;
+        background: #a8a8a8;
+        position: relative;
+        margin-bottom: 20*$px;
+        div{
+            position: absolute;
+            width: 80*$px;
+            height: 22*$px;
+            font-size: 14*$px;
+            color: #eee;
+            background: #a7a7a7;
+            text-align: center;
+            line-height: 22*$px;
+            border-radius: 5*$px;
+            top: 50%;
+            left: 50%;
+            margin-top: -11*$px;
+            margin-left: -40*$px;
+        }
+    }
+
+}

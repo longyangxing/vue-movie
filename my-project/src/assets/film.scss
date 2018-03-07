@@ -1,0 +1,66 @@
+@import 'common';
+#film {
+  background: #f9f9f9;
+  .tab {
+    margin: 0 15*$px;
+    border-bottom: 1px solid #fe6e00;
+    @include box(justify, center);
+  }
+  .chose-tab {
+    width: 50%;
+    height: 40*$px;
+    line-height: 40*$px;
+    text-align: center;
+    font-size: 16*$px;
+    color: #6a6a6a;
+    &.active {
+      border-bottom: 2px solid #fe6e00;
+      color: #fe6e00;
+    }
+  }
+  .tab-content {
+    margin: 0 15*$px;
+  }
+  .film-list-item {
+    @include box(justify, center);
+    padding: 15*$px 0;
+    border-bottom: 1px dashed #8e8e8e;
+    img {
+      width: 60*$px;
+      height: 82*$px;
+    }
+    .film-dec {
+      font-size: 12*$px;
+      width: 250*$px;
+    }
+    .film-name-content {
+      @include box(justify, center);
+    }
+    .film-name {
+      font-size: 16*$px;
+      line-height: 32*$px;
+      color: #000;
+      @include hideWord();
+    }
+    .count{
+       font-size: 16*$px;
+       line-height: 32*$px;
+       color: #fc7103;
+       margin-right: 20*$px;
+    }
+    .film-intro {
+      height: 24*$px;
+      line-height: 24*$px;
+      color: #8e8e8e;
+      @include hideWord();
+    }
+    .film-count {
+      line-height: 24*$px;
+      color: #8e8e8e;
+      font-size: 12*$px;
+    }
+    .film-count-color1 {
+      color: #8aa2bf;
+    }
+  }
+}
